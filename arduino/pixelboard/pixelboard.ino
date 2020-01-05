@@ -9,7 +9,7 @@ int brightness = 0;
 int direction = 1;
 
 void setup() {
-  Serial.begin(9600);
+  //Serial.begin(9600);
   pixels.begin();
   pixels.setBrightness(127);
   pixels.show();
@@ -25,7 +25,7 @@ void change() {
   setRandomColor(2);
   setRandomColor(3);
   pixels.show();
-  delay(random(50, 500));
+  delay(random(50, 1000));
   //delay(70);
 }
 
